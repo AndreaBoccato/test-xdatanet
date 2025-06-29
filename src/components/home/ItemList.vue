@@ -25,7 +25,6 @@ const { items } = defineProps({
 })
 
 function onItemClicked(item: Item): void {
-  console.log('+++++++++', item)
 }
 </script>
 

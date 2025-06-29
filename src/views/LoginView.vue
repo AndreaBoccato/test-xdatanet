@@ -16,10 +16,6 @@ import router from '@/router'
 import { ref } from 'vue'
 import { useToast } from 'vue-toastification'
 
-if (authService.isLoggedIn.value) {
-  router.replace('Home')
-}
-
 const isSubmitting = ref(false)
 const toast = useToast()
 

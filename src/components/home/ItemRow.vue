@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import { Item } from '@/core/models/item.model'
 import itemService from '@/core/services/itemService'
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import ItemImage from './ItemImage.vue'
 
 const { item } = defineProps({
