@@ -19,7 +19,7 @@
             style="min-width: 5rem"
             v-for="tag of selectedItem.value.tags"
           >
-            {{ tag }}
+            <span class="fs-6">{{ tag }}</span>
           </div>
         </div>
 

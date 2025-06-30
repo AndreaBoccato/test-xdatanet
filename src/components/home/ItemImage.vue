@@ -1,8 +1,8 @@
 <template>
   <img
-    class="rounded-circle"
+    class="rounded-circle object-fit-cover"
     :src="item.image"
-    :style="{ width: size + 'px', height: size + 'px' }"
+    :style="{ width: size + 'px', height: size + 'px', aspectRatio: '1' }"
   />
 </template>
 
