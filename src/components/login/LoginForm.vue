@@ -17,7 +17,7 @@
         <input v-model="password" type="password" class="form-control" id="passwordInput" />
       </div>
 
-      <button @disabled="isSubmitting" type="submit" class="btn btn-primary login-button">
+      <button :disabled="props.isSubmitting" type="submit" class="btn btn-primary login-button">
         Login
       </button>
     </form>
@@ -29,7 +29,7 @@
     </div>
 
     <button
-      @disabled="isSubmitting"
+      :disabled="props.isSubmitting"
       @click="onLoginWithGoogle"
       type="button"
       class="btn btn-light login-button"
@@ -46,7 +46,7 @@ import { ref } from 'vue'
 const email = ref('')
 const password = ref('')
 
-const { isSubmitting = false } = defineProps<{
+const props = defineProps<{
   isSubmitting: boolean
 }>()
 
